@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WarCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-Du-dnX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsr-ua-SkK">
+                                <rect key="frame" x="333" y="789" width="61" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="A83-55-wTN">
+                                <rect key="frame" x="146" y="64" width="122" height="67"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1XR-Xv-EzF">
+                                <rect key="frame" x="62" y="363" width="290" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="ttH-g7-w3Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card3" translatesAutoresizingMaskIntoConstraints="NO" id="eVG-3u-ika">
+                                        <rect key="frame" x="170" y="0.0" width="120" height="170"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" spacing="25"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg5-bg-dRN">
+                                <rect key="frame" x="20" y="825.5" width="19.5" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-gh-A1a">
+                                <rect key="frame" x="20" y="789" width="92.5" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4o-mc-aPw">
+                                <rect key="frame" x="374.5" y="825.5" width="19.5" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zn4-Ld-IOs">
+                                <rect key="frame" x="154" y="553" width="106" height="45"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="dealbutton" title=""/>
+                                <connections>
+                                    <action selector="dealButtonOnClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8w-9u-thF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1XR-Xv-EzF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="75O-DA-2x6"/>
+                            <constraint firstItem="jyK-Du-dnX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ETG-T2-SWf"/>
+                            <constraint firstItem="A83-55-wTN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JOy-U2-xeP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsr-ua-SkK" secondAttribute="trailing" constant="20" id="Jgi-oj-H9F"/>
+                            <constraint firstAttribute="trailing" secondItem="jyK-Du-dnX" secondAttribute="trailing" id="Mae-Zs-rUe"/>
+                            <constraint firstItem="Vg5-bg-dRN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MvR-ZK-Leb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t4o-mc-aPw" secondAttribute="bottom" id="NOf-dV-7K2"/>
+                            <constraint firstItem="hzO-gh-A1a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TNq-5L-g3k"/>
+                            <constraint firstAttribute="bottom" secondItem="jyK-Du-dnX" secondAttribute="bottom" id="WHm-oZ-L08"/>
+                            <constraint firstItem="A83-55-wTN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Z5T-C4-m3q">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="1XR-Xv-EzF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bR7-Pw-Eul"/>
+                            <constraint firstItem="Vg5-bg-dRN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="emL-ud-CxB"/>
+                            <constraint firstItem="t4o-mc-aPw" firstAttribute="top" secondItem="hsr-ua-SkK" secondAttribute="bottom" id="gBG-Gm-cf2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t4o-mc-aPw" secondAttribute="trailing" constant="20" id="jEW-1m-S1e"/>
+                            <constraint firstItem="Vg5-bg-dRN" firstAttribute="top" secondItem="hzO-gh-A1a" secondAttribute="bottom" id="ls5-5V-QAs"/>
+                            <constraint firstItem="zn4-Ld-IOs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r7c-6l-4y8"/>
+                            <constraint firstItem="zn4-Ld-IOs" firstAttribute="top" secondItem="1XR-Xv-EzF" secondAttribute="bottom" constant="20" id="ymk-hJ-5Eh"/>
+                            <constraint firstItem="jyK-Du-dnX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zMr-H0-mzN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CPUPoint" destination="t4o-mc-aPw" id="gfC-o3-nB5"/>
+                        <outlet property="LeftCardImageView" destination="ttH-g7-w3Y" id="naB-YP-9IP"/>
+                        <outlet property="PlayerPoint" destination="Vg5-bg-dRN" id="PcG-Pe-T96"/>
+                        <outlet property="RightCardImageView" destination="eVG-3u-ika" id="ZDK-Eh-mr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738.39999999999998" y="53.523238380809602"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="414" height="896"/>
+        <image name="card10" width="120" height="170"/>
+        <image name="card3" width="120" height="170"/>
+        <image name="dealbutton" width="82" height="31"/>
+        <image name="logo" width="122" height="67"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
